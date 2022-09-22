@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Thai</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Mountain Thai</h1></a>
+            <p>
+              <span>Authentic Thai Cuisine </span><span class="hidden-xs hidden-sm">in the White Mountains</span><span class="visible-lg">of Arizona</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:9283684168">
+                <span>(928) 368 - 4168</span></a><div>* Take-out or Dine-in</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+  <!-- phone for xs home page -->
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:9283684168">
+    <span class="glyphicon glyphicon-earphone"></span>
+    (928) 368-4168
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* Take-out or Dine-in</div>
+  
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/diningroom_768r.png" alt="Mtn Thai dining room" class="img-responsive visible-xs">
+    </div>
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href=""menu-categories.html"><div id="menu-tile"><span>Menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href=""single-category.html"><div id="specials-tile"><span>Specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12"> <!---MAP TILE-->
+        <a href=""single-category.html"><div id="specials-tile"><span>Specials</span></div></a>
+      </div>
+    </div>
+
+  </div><!--End of main content-->
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
