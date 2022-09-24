@@ -272,7 +272,7 @@ body {
     padding: 0;
     
   }
-  #menu-tile, #specials-tile{
+  #menu-tile, #specials-tile, #map-tile {
     width: 360px;
     margin: 0 auto 15px auto ;
   }
