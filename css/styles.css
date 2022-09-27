@@ -14,15 +14,14 @@ body {
 
 #logo-img {
   background: url('../images/Flag_of_Thailand.png') no-repeat;
-  width: 150px;
+  width: 225px;
   height: 150px;
-  margin: 10px 15px 10px 0;
+  margin: 15px 15px 10px 0;
 }
 
 .navbar-brand {
   padding-top: 25px;
 }
-
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
@@ -37,6 +36,7 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+
 .navbar-brand p { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
@@ -83,43 +83,7 @@ body {
 }
 /* END HEADER */
 
-/* HOME PAGE */
-.container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
-}
-
-/* END HOME PAGE */
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../images/diningroom_1200r.png') no-repeat;
-    height:532px;
-    width:1200px ;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-    background: url('../images/Flag_of_Thailand.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
-  }
-  .container .jumbotron {
-    background: url('../images/diningroom_968r.png') no-repeat;
-    width:968px;
-    height:439px ;
-  }
-
-
-
-  }
-  /* End Header */
-  /* FOOTER */
+/* FOOTER */
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
@@ -150,64 +114,163 @@ body {
 /* END FOOTER */
 
 
-  /* Home Page */
-  #menu-tile, #specials-tile, #map-tile {
-    height:250px ;
-    width:100%;
-    margin-bottom: 15px ;
-    position: relative;
-    border: 2px solid #3F0C1F ;
-    overflow: hidden ;
-  }
-  #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-    box-shadow: 0 1px 5px 1px #cccccc ;
-  }
 
-  #menu-tile {
-    background: url('../images/menu-tile.jpg') no-repeat ;
-    background-position: center ;
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
 
-  }
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
 
-  #specials-tile {
-    background: url('../images/specials-tile.jpg') no-repeat ;
-    background-position: center ;
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  color: #ff0 ;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
 
-  }
-  #menu-tile span, #specials-tile span, #map-tile span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    background-color: #000;
-    color: #fff;
-    opacity: .8;
-  }
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+.menu-subhead {
+  color:#f6b319 ;
+}
+/* END MENU CATEGORIES PAGE */
 
-  @media (min-width:1200){
+/* SINGLE CATEGORY PAGE */
+
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
   .container .jumbotron {
     background: url('../images/diningroom_1200r.png') no-repeat;
-    width:1200px;
-    height:532px;
-    
+    height: 532px;
   }
 }
-  /* End Home Page */
 
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/Flag_of_Thailand_med.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    margin: 15px 10px 5px 0px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/diningroom_968r.png') no-repeat;
+    height: 449px;
+  }
+  /* End Home Page */
+}
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/diningroom_968r.png') no-repeat;
-    height:449px ;
-    
+    background: url('../images/diningroom_768r.png') no-repeat;
+    height: 353px;
   }
   /* End Home Page */
-
 }
 
 /********** Extra small devices only **********/
@@ -266,26 +329,53 @@ body {
     width: 50%;
   }
   /* End Footer */
+
   /* Home Page */
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
-    
   }
-  #menu-tile, #specials-tile, #map-tile {
+  #menu-tile, #specials-tile {
     width: 360px;
-    margin: 0 auto 15px auto ;
+    margin: 0 auto 15px;
   }
 
-}
-@media (max-width: 479px){
-  #menu-tile, #specials-tile{
-    width: 340px;
-    margin: 0 auto 15px auto ;
+  .menu-item-photo {
+    margin-right: auto;
   }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
-    font-size: 8vw; /* 1vw = 1% of viewport width */
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
   }
 
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
+
+
+
