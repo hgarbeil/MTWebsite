@@ -1,0 +1,9 @@
+"id","short_name","name"
+80,"SA","Salads"
+81,"S","Soup"
+82,"A","Appetizers"
+83,"E","Entrees"
+84,"SO","Side Orders"
+85,"D","Desserts"
+86,"B","Drinks"
+

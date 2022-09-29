@@ -1,0 +1,37 @@
+[
+    {
+        "id": "80",
+        "short_name": "SA",
+        "name": "Salads"
+    },
+    {
+        "id": "81",
+        "short_name": "S",
+        "name": "Soup"
+    },
+    {
+        "id": "82",
+        "short_name": "A",
+        "name": "Appetizers"
+    },
+    {
+        "id": "83",
+        "short_name": "E",
+        "name": "Entrees"
+    },
+    {
+        "id": "84",
+        "short_name": "SO",
+        "name": "Side Orders"
+    },
+    {
+        "id": "85",
+        "short_name": "D",
+        "name": "Desserts"
+    },
+    {
+        "id": "86",
+        "short_name": "B",
+        "name": "Drinks"
+    }
+]
