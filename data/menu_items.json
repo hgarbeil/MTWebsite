@@ -1,0 +1,112 @@
+[
+    {
+        "ID": "0",
+        "category": "AP",
+        "short_name": "00",
+        "name": "Summer Rolls",
+        "description": "2 rice paper wraps with noodles",
+        "price_small": "$13.95",
+        "price_large": "14.95",
+        "small_portion_name": "Veg",
+        "large_portion_name": "Pork or Shrimp"
+    },
+    {
+        "ID": "1",
+        "category": "AP",
+        "short_name": "0",
+        "name": "Deep Fried Tofu",
+        "description": "Served with Peanut Sauce",
+        "price_small": "$7.95",
+        "price_large": "",
+        "small_portion_name": "",
+        "large_portion_name": ""
+    },
+    {
+        "ID": "2",
+        "category": "AP",
+        "short_name": "1",
+        "name": "Garlic Shrimp",
+        "description": "Sauteed in a rice wine garlic sauce, served with sliced cucuber",
+        "price_small": "13.95",
+        "price_large": "",
+        "small_portion_name": "Reg",
+        "large_portion_name": ""
+    },
+    {
+        "ID": "3",
+        "category": "AP",
+        "short_name": "2",
+        "name": "Fried Garlic Chicken Wings",
+        "description": "",
+        "price_small": "$11.95",
+        "price_large": "",
+        "small_portion_name": "",
+        "large_portion_name": ""
+    },
+    {
+        "ID": "4",
+        "category": "AP",
+        "short_name": "3",
+        "name": "Egg Rolls",
+        "description": "Large crispy egg rolls",
+        "price_small": "$9.50",
+        "price_large": "Veg",
+        "small_portion_name": "10.50",
+        "large_portion_name": "Shrimp and Veg"
+    },
+    {
+        "ID": "8",
+        "category": "SA",
+        "short_name": "S3",
+        "name": "Tofu Salad",
+        "description": "Tofu, green onions, bean sprouts, and cilantro",
+        "price_small": "8.95",
+        "price_large": "8.95",
+        "small_portion_name": "regular",
+        "large_portion_name": "double"
+    },
+    {
+        "ID": "8",
+        "category": "SA",
+        "short_name": "S4",
+        "name": "House Salad",
+        "description": "Tofu, green onions, bean sprouts, and cilantro",
+        "price_small": "8.95",
+        "price_large": "8.95",
+        "small_portion_name": "regular",
+        "large_portion_name": "double"
+    },
+    {
+        "ID": "8",
+        "category": "SO",
+        "short_name": "S8",
+        "name": "Tofu Soup",
+        "description": "Tofu, green onions, bean sprouts, and cilantro",
+        "price_small": "8.95",
+        "price_large": "8.95",
+        "small_portion_name": "regular",
+        "large_portion_name": "double"
+    },
+    {
+        "ID": "9",
+        "category": "SO",
+        "short_name": "S9",
+        "name": "Noodle Soup",
+        "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
+        "price_small": "$11.95",
+        "price_large": "$11.95",
+        "small_portion_name": "regular",
+        "large_portion_name": "large"
+    },
+    {
+        "ID": "10",
+        "category": "SO",
+        "short_name": "S9",
+        "name": "Noodle Soup",
+        "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
+        "price_small": "$11.95",
+        "price_large": "$11.95",
+        "small_portion_name": "regular",
+        "large_portion_name": "large"
+    }
+]

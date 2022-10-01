@@ -1,0 +1,68 @@
+{"menu_items":[
+    {
+        "ID": "8",
+	"category":"S",
+        "short_name": "S8",
+        "name": "Tofu Soup",
+        "description": "Tofu, green onions, bean sprouts, and cilantro",
+        "price_small": 8.95,
+        "price_large": 8.95,
+        "small_portion_name": "regular",
+        "large_portion_name": "double"
+    },
+    {
+        "ID": "9",
+	"category":"S",
+        "short_name": "S9",
+        "name": "Noodle Soup",
+        "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
+        "price_small": 11.95,
+        "price_large": 11.95,
+        "small_portion_name": "regular",
+        "large_portion_name": "large"
+    }
+],
+"category":
+    {
+        "id": "80",
+        "short_name": "SA",
+        "name": "Salads",
+        "url": "data/menu_items_S.json"
+    },
+    {
+        "id": "81",
+        "short_name": "S",
+        "name": "Soup",
+        "url": "data/menu_items_S.json"
+    },
+    {
+        "id": "82",
+        "short_name": "A",
+        "name": "Appetizers",
+        "url": null
+    },
+    {
+        "id": "83",
+        "short_name": "E",
+        "name": "Entrees",
+        "url": null
+    },
+    {
+        "id": "84",
+        "short_name": "SO",
+        "name": "Side Orders",
+        "url": null
+    },
+    {
+        "id": "85",
+        "short_name": "D",
+        "name": "Desserts",
+        "url": null
+    },
+    {
+        "id": "86",
+        "short_name": "B",
+        "name": "Drinks",
+        "url": null
+    }
+}

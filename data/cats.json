@@ -1,37 +1,51 @@
 [
     {
+        "id": "82",
+        "short_name": "AP",
+        "name": "Appetizers",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
+    },
+    {
         "id": "80",
         "short_name": "SA",
-        "name": "Salads"
+        "name": "Salads",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
     },
     {
         "id": "81",
-        "short_name": "S",
-        "name": "Soup"
-    },
-    {
-        "id": "82",
-        "short_name": "A",
-        "name": "Appetizers"
+        "short_name": "SO",
+        "name": "Soup",
+        "url": "data/menu_items_S.json",
+        "special_instructions": "One generous serving is a meal for one or share a bowl between two or three friends"
     },
     {
         "id": "83",
-        "short_name": "E",
-        "name": "Entrees"
+        "short_name": "EN",
+        "name": "Entrees",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
     },
     {
         "id": "84",
-        "short_name": "SO",
-        "name": "Side Orders"
+        "short_name": "SD",
+        "name": "Side Orders",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
     },
     {
         "id": "85",
-        "short_name": "D",
-        "name": "Desserts"
+        "short_name": "DE",
+        "name": "Desserts",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
     },
     {
         "id": "86",
-        "short_name": "B",
-        "name": "Drinks"
+        "short_name": "BE",
+        "name": "Drinks",
+        "url": "data/menu_items_S.json",
+        "special_instructions": ""
     }
 ]

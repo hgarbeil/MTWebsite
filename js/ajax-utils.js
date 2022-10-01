@@ -1,3 +1,5 @@
+// 
+
 (function (global) {
 
 // Set up a namespace for our utility
@@ -30,7 +32,9 @@ ajaxUtils.sendGetRequest =
                        responseHandler,
                        isJsonResponse); 
       };
+    // open request - true for asynch...
     request.open("GET", requestUrl, true);
+    // sends...
     request.send(null); // for POST only
   };
 
@@ -38,6 +42,7 @@ ajaxUtils.sendGetRequest =
 // Only calls user provided 'responseHandler'
 // function if response is ready
 // and not an error
+// good if ==4 and status ==200
 function handleResponse(request,
                         responseHandler,
                         isJsonResponse) {
