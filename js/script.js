@@ -30,7 +30,7 @@ var allCategoriesUrl = "data/cats.json" ;
   //"https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
-var menuItemsUrl = 'data/menu_items.json' ;
+var menuItemsUrl = 'data/menu_items_new.json' ;
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 var currentCategory = '' ;
@@ -238,20 +238,17 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
                      catShortName);
     html =
       insertItemPrice(html,
-                      "price_small",
-                      menuItems[i].price_small);
-    html =
-      insertItemPortionName(html,
-                            "small_portion_name",
-                            menuItems[i].small_portion_name);
+                      "price_0",
+                      menuItems[i].price_0);
+    
     html =
       insertItemPrice(html,
-                      "price_large",
-                      menuItems[i].price_large);
+                      "price_1",
+                      menuItems[i].price_1);
     html =
       insertItemPortionName(html,
-                            "large_portion_name",
-                            menuItems[i].large_portion_name);
+                            "price_2",
+                            menuItems[i].price_2);
     html =
       insertProperty(html,
                      "name",
@@ -284,7 +281,7 @@ function insertItemPrice(html,
     return insertProperty(html, pricePropName, "");;
   }
   //priceValue = "$" + priceValue.toFixed(2);
-  priceValue = "$"+priceValue ;
+  // priceValue = "$"+priceValue ;
   html = insertProperty(html, pricePropName, priceValue);
   return html;
 }

@@ -1,3 +1,0 @@
-"ID","short_name","name","description","price_small","price_large","small_portion_name","large_portion_name"
-8,"S8","Tofu Soup","Tofu, green onions, bean sprouts, and cilantro","8.95","8.95","regular","double"
-9,"S9","Noodle Soup","Choice of rice, egg or clear bean thread noodles with vegetalbes","$11.95","$11.95","regular","large"
