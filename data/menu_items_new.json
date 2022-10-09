@@ -5,8 +5,8 @@
         "short_name": "00",
         "name": "Summer Rolls",
         "description": "2 rice paper wraps with noodles",
-        "price_0": "Veg $13.95",
-        "price_1": "Pork or Shrimp $14.95",
+        "price_0": "$13.95  Veg",
+        "price_1": "$14.95  Pork or Shrimp",
         "price_2": ""
     },
     {
@@ -44,7 +44,7 @@
         "category": "AP",
         "short_name": "3",
         "name": "Egg Rolls",
-        "description": "Large crispy egg rolls",
+        "description": "Two large crispy egg rolls",
         "price_0": "Veg $9.50",
         "price_1": "Shrimp and Veg $10.50",
         "price_2": ""
@@ -54,7 +54,7 @@
         "category": "AP",
         "short_name": "4",
         "name": "Satay",
-        "description": "Barbequed skewers of pork or chicken, served with peanut sauce on the side",
+        "description": "Two barbequed skewers of pork or chicken, served with peanut sauce on the side",
         "price_0": "$10.95 (2)",
         "price_1": "",
         "price_2": ""
@@ -115,21 +115,8 @@
         "short_name": "9",
         "name": "Noodle Soup",
         "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
-        "price_0": "$11.95",
-        "price_1": "",
-        "price_2": ""
-    },
-    {
-        "ID": "10",
-        "category": "SO",
-        "short_name": "9",
-        "name": "Noodle Soup",
-        "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
-        "price_0": "$11.95",
-        "price_1": "",
-        "price_2": "",
-        "null": [
-            ""
-        ]
+        "price_0": "$11.95  Pork,Chicken or Tofu",
+        "price_1": "$12.95  Seafood or Shrimp",
+        "price_2": "$13.95  Pork and Shrimp Combo"
     }
 ]

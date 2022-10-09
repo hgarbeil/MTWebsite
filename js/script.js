@@ -246,7 +246,7 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
                       "price_1",
                       menuItems[i].price_1);
     html =
-      insertItemPortionName(html,
+      insertItemPrice(html,
                             "price_2",
                             menuItems[i].price_2);
     html =
@@ -259,10 +259,10 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
                      menuItems[i].description);
 
     // Add clearfix after every second menu item
-    if (i % 2 != 0) {
-      html +=
-        "<div class='clearfix visible-lg-block visible-md-block'></div>";
-    }
+    // if (i % 2 != 0) {
+    //   html +=
+    //     "<div class='clearfix visible-lg-block visible-md-block'></div>";
+    // }
 
     finalHtml += html;
   }

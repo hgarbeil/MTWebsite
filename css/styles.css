@@ -193,19 +193,28 @@ body {
 /* SINGLE CATEGORY PAGE */
 
 .menu-item-tile {
-  margin-bottom: 25px;
+  background-color: #81122f;
+  position: relative ;
+  margin: auto;
+  min-height:200px ;
+  border: 2px solid #3F0C1F;
+  padding : 8px ;
 
 }
 .menu-item-tile hr {
   width: 80%;
+
 }
 .menu-item-tile .menu-item-price {
   /*background-color: #557c3e;
   */
   font-size: 1.1em;
   text-align: right;
-  margin-top: 15px;
-  margin-right: 0px;
+  position : absolute ;
+  bottom:0px;
+  margin-top:10px ;
+
+
   
 }
 
@@ -244,7 +253,7 @@ body {
   text-align: center;
 }
 .menu-item-description {
-  padding-right: 30px;
+  padding-right: 5px;
 }
 h3.menu-item-title {
   margin: 0 0 10px;
