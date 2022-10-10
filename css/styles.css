@@ -195,10 +195,11 @@ body {
 .menu-item-tile {
   background-color: #81122f;
   position: relative ;
-  margin:auto;
+  margin: auto;
   min-height:200px ;
   border: 2px solid #3F0C1F;
   padding : 8px ;
+  
 
 }
 .menu-item-tile hr {
@@ -227,11 +228,11 @@ body {
 
 .menu-item-title-block #short-name-tag {
   background-color: #557c3e;
-  width: 8% ;
+  width: 10% ;
   float: left ;
   text-align: center;
   border-radius:5px ;
-  margin-right: 5px ;
+  margin-right: 8px ;
   
 }
  h3.menu-item-title-block{
@@ -312,6 +313,10 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url('../images/diningroom_1200r.png') no-repeat;
     height: 532px;
+  }
+
+  #main-content{
+    width : 90% ;
   }
 }
 
