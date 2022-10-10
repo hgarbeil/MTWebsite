@@ -5,9 +5,12 @@
         "short_name": "00",
         "name": "Summer Rolls",
         "description": "2 rice paper wraps with noodles",
-        "price_0": "$13.95  Veg",
-        "price_1": "$14.95  Pork or Shrimp",
-        "price_2": ""
+        "price_0": "$13.95",
+        "meat_0": "Veg",
+        "price_1": "$14.95",
+        "meat_1": "Pork or Shrimp",
+        "price_2": "",
+        "meat_2": null
     },
     {
         "ID": "1",
@@ -16,8 +19,11 @@
         "name": "Deep Fried Tofu",
         "description": "Served with Peanut Sauce",
         "price_0": "$7.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": null,
+        "price_2": null,
+        "meat_2": null
     },
     {
         "ID": "2",
@@ -26,8 +32,11 @@
         "name": "Garlic Shrimp",
         "description": "Sauteed in a rice wine garlic sauce, served with sliced cucuber",
         "price_0": "13.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": null,
+        "price_2": null,
+        "meat_2": null
     },
     {
         "ID": "3",
@@ -36,8 +45,11 @@
         "name": "Fried Garlic Chicken Wings",
         "description": "",
         "price_0": "$11.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": null,
+        "price_2": null,
+        "meat_2": null
     },
     {
         "ID": "4",
@@ -45,9 +57,12 @@
         "short_name": "3",
         "name": "Egg Rolls",
         "description": "Two large crispy egg rolls",
-        "price_0": "Veg $9.50",
-        "price_1": "Shrimp and Veg $10.50",
-        "price_2": ""
+        "price_0": "$9.50",
+        "meat_0": "Veg",
+        "price_1": "$10.50",
+        "meat_1": "Shrimp and Veg",
+        "price_2": "",
+        "meat_2": null
     },
     {
         "ID": "5",
@@ -55,9 +70,12 @@
         "short_name": "4",
         "name": "Satay",
         "description": "Two barbequed skewers of pork or chicken, served with peanut sauce on the side",
-        "price_0": "$10.95 (2)",
+        "price_0": "$10.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": "",
+        "price_2": "",
+        "meat_2": ""
     },
     {
         "ID": "6",
@@ -66,8 +84,11 @@
         "name": "Larb (spicy and sour)",
         "description": "Minced pork or chicken with ground rice, mint, cabbage and cucumber",
         "price_0": "$15.95",
-        "price_1": "$16.95 beef",
-        "price_2": ""
+        "meat_0": "",
+        "price_1": "$16.95",
+        "meat_1": "Beef",
+        "price_2": "",
+        "meat_2": ""
     },
     {
         "ID": "8",
@@ -76,8 +97,11 @@
         "name": "Cucumber Salad",
         "description": "sliced chilled cucumbers and tomatoes served with a peanut-lime dressing",
         "price_0": "$9.25",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": null,
+        "price_2": null,
+        "meat_2": null
     },
     {
         "ID": "8",
@@ -86,8 +110,11 @@
         "name": "Shrimp and Cabbage Salad",
         "description": "fresh shrimp, shredded green cabbage, Chinese cabbage,and tomatoes served with herb-lime dressing",
         "price_0": "$14.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": "",
+        "price_2": "",
+        "meat_2": ""
     },
     {
         "ID": "8",
@@ -96,8 +123,11 @@
         "name": "Garden Salad",
         "description": "lettuce,cucumbers,carrots,tomatoes, red onions,bean sprouts & Napa Cabbage with Thai Lemongrass dressing",
         "price_0": "$8.95",
+        "meat_0": "",
         "price_1": "",
-        "price_2": ""
+        "meat_1": null,
+        "price_2": null,
+        "meat_2": null
     },
     {
         "ID": "8",
@@ -105,9 +135,12 @@
         "short_name": "8",
         "name": "Tofu Soup",
         "description": "Tofu, green onions, bean sprouts, and cilantro",
-        "price_0": "$8.95 Veg, Pork or Chicken",
+        "price_0": "$8.95",
+        "meat_0": "Veg, Pork or Chicken",
         "price_1": "",
-        "price_2": ""
+        "meat_1": "",
+        "price_2": "",
+        "meat_2": null
     },
     {
         "ID": "9",
@@ -115,8 +148,11 @@
         "short_name": "9",
         "name": "Noodle Soup",
         "description": "Choice of rice, egg or clear bean thread noodles with vegetalbes",
-        "price_0": "$11.95  Pork,Chicken or Tofu",
-        "price_1": "$12.95  Seafood or Shrimp",
-        "price_2": "$13.95  Pork and Shrimp Combo"
+        "price_0": "$11.95",
+        "meat_0": "Pork,Chicken or Tofu",
+        "price_1": "$12.95",
+        "meat_1": "Seafood or Shrimp",
+        "price_2": "$13.95",
+        "meat_2": "Pork and Shrimp Combo"
     }
 ]

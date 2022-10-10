@@ -195,7 +195,7 @@ body {
 .menu-item-tile {
   background-color: #81122f;
   position: relative ;
-  margin: auto;
+  margin:auto;
   min-height:200px ;
   border: 2px solid #3F0C1F;
   padding : 8px ;
@@ -211,12 +211,19 @@ body {
   font-size: 1.1em;
   text-align: right;
   position : absolute ;
-  bottom:0px;
+  bottom:2px;
+  right:0px ;
   margin-top:10px ;
+  margin-right:5px ;
 
 
   
 }
+
+.menu-item-tile .menu-item-price span {
+  font-style : italic ;
+}
+
 
 .menu-item-title-block #short-name-tag {
   background-color: #557c3e;
@@ -232,7 +239,7 @@ body {
  }
 
 .menu-item-tile .menu-item-price span {
-  font-size: .6em;
+  font-size: .9em;
 }
 .menu-item-photo {
   position: relative;
@@ -261,6 +268,41 @@ h3.menu-item-title {
 .menu-item-details {
   font-size: .9em;
   font-style: italic;
+}
+
+.home-text {
+  background-color: #81122f;
+  padding:30px ;
+  border-radius: 88px ;
+
+}
+
+.home-text p {
+  text-indent: 30pt ;
+  font-size: 1.2em ;
+  line-height: 200%;
+
+}
+
+.aboutMTtext {
+  background-color: #81122f;
+  padding:30px ;
+  border-radius: 88px ;
+
+
+}
+
+.aboutMTtext p {
+  text-indent: 30pt ;
+  font-size: 1.2em ;
+  line-height: 200%;
+
+}
+
+.aboutMTtext #aboutClosing {
+  font-size: 1.2em ;
+  font-style: italic;
+
 }
 /* END SINGLE CATEGORY PAGE */
 

@@ -20,6 +20,23 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   });
 });
 
+// Remove the class 'active' from home and switch to Menu button
+var switchMenuToActive = function () {
+  // Remove 'active' from home button
+  var classes = document.querySelector("#navHomeButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navHomeButton").className = classes;
+
+  // Add 'active' to menu button if not already there
+  classes = document.querySelector("#navMenuButton").className;
+  if (classes.indexOf("active") == -1) {
+    classes += " active";
+    document.querySelector("#navMenuButton").className = classes;
+  }
+};
+
+
+
 (function (global) {
 
 var dc = {};
@@ -34,6 +51,7 @@ var menuItemsUrl = 'data/menu_items_new.json' ;
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 var currentCategory = '' ;
+var aboutHtml = 'snippets/about-snippet.html' ;
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -73,11 +91,64 @@ var switchMenuToActive = function () {
   }
 };
 
+
+// this is the more involved function to choose which of the menu items to turn off 
+// and on
+var switchItemMenuToActive = function (itemNum) {
+  // Remove 'active' from all buttons
+  var classes ="" ;
+  classes = document.querySelector("#navHomeButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navHomeButton").className = classes;
+  classes = document.querySelector("#navMenuButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navMenuButton").className = classes;
+  classes = document.querySelector("#navAboutButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navAboutButton").className = classes;
+
+  switch (itemNum) {
+    case 0 :
+      classes = document.querySelector("#navHomeButton").className;
+      if (classes.indexOf("active") == -1) {
+      classes += " active";
+      document.querySelector("#navHomeButton").className = classes;
+      }
+      break ;
+    case 1 :
+      classes = document.querySelector("#navMenuButton").className;
+      if (classes.indexOf("active") == -1) {
+      classes += " active";
+      document.querySelector("#navMenuButton").className = classes;
+      }
+      break ;
+    case 2 :
+      classes = document.querySelector("#navAboutButton").className;
+      if (classes.indexOf("active") == -1) {
+        classes += " active";
+        document.querySelector("#navAboutButton").className = classes;
+      }
+      break ;
+    default :
+      classes = document.querySelector("#navHomeButton").className;
+      if (classes.indexOf("active") == -1) {
+      classes += " active";
+      document.querySelector("#navHomeButton").className = classes;
+      }
+      break ;
+  
+    
+  };
+
+  
+};
+
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
 // On first load, show home view
 showLoading("#main-content");
+switchItemMenuToActive(0);
 $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
@@ -93,6 +164,18 @@ dc.loadMenuCategories = function () {
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
     buildAndShowCategoriesHTML);
+  
+};
+
+// Load the menu categories view
+dc.loadAboutPage = function () {
+  showLoading("#main-content");
+  switchItemMenuToActive(2);
+  $ajaxUtils.sendGetRequest(
+    aboutHtml, function(responseText){
+    document.querySelector("#main-content").innerHTML = 
+    responseText ;
+    },false) ; 
   
 };
 
@@ -123,6 +206,7 @@ function buildAndShowCategoriesHTML (categories) {
         function (categoryHtml) {
           // Switch CSS class active to menu button
           //switchMenuToActive();
+          switchItemMenuToActive(1);
 
           var categoriesViewHtml =
             buildCategoriesViewHtml(categories,
@@ -179,7 +263,7 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
         menuItemHtml,
         function (menuItemHtml) {
           // Switch CSS class active to menu button
-          //switchMenuToActive();
+          switchItemMenuToActive(1);
           
           var menuItemsViewHtml =
             buildMenuItemsViewHtml(categoryMenuItems,
@@ -240,21 +324,27 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
       insertItemPrice(html,
                       "price_0",
                       menuItems[i].price_0);
-    
-    html =
-      insertItemPrice(html,
+    html = insertItemPortionName(html, "meat_0",
+                    menuItems[i].meat_0) ;
+
+    html = insertItemPrice_1(html,
                       "price_1",
                       menuItems[i].price_1);
+    
+    html = insertItemPortionName(html, "meat_1",
+                      menuItems[i].meat_1) ;
     html =
-      insertItemPrice(html,
+      insertItemPrice_1(html,
                             "price_2",
                             menuItems[i].price_2);
-    html =
-      insertProperty(html,
+    html = insertProperty(html,
                      "name",
                      menuItems[i].name);
-    html =
-      insertProperty(html,
+
+    html = insertItemPortionName(html, "meat_2",
+                     menuItems[i].meat_2) ;
+
+    html = insertProperty(html,
                      "description",
                      menuItems[i].description);
 
@@ -272,16 +362,32 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
 }
 
 
-// Appends price with '$' if price exists
+ // Appends price with '$' if price exists
 function insertItemPrice(html,
-                         pricePropName,
-                         priceValue) {
-  // If not specified, replace with empty string
-  if (!priceValue) {
-    return insertProperty(html, pricePropName, "");;
-  }
+  pricePropName,
+  priceValue) {
+// If not specified, replace with empty string
+if (!priceValue) {
+return insertProperty(html, pricePropName, "");;
+}
+//priceValue = "$" + priceValue.toFixed(2);
+  // priceValue = "$"+priceValue ;
+  priceValue = priceValue ;
+  html = insertProperty(html, pricePropName, priceValue);
+  return html;
+}
+
+// Appends price with '$' if price exists
+function insertItemPrice_1(html,
+  pricePropName,
+  priceValue) {
+// If not specified, replace with empty string
+if (!priceValue) {
+return insertProperty(html, pricePropName, "");;
+}
   //priceValue = "$" + priceValue.toFixed(2);
   // priceValue = "$"+priceValue ;
+  priceValue = "<br>"+priceValue ;
   html = insertProperty(html, pricePropName, priceValue);
   return html;
 }
@@ -296,7 +402,7 @@ function insertItemPortionName(html,
     return insertProperty(html, portionPropName, "");
   }
 
-  portionValue = "(" + portionValue + ")";
+  // portionValue = portionValue ;
   html = insertProperty(html, portionPropName, portionValue);
   return html;
 }
