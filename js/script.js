@@ -358,6 +358,7 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
   }
 
   finalHtml += "</section>";
+  console.log(finalHtml);
   return finalHtml;
 }
 
@@ -387,7 +388,7 @@ return insertProperty(html, pricePropName, "");;
 }
   //priceValue = "$" + priceValue.toFixed(2);
   // priceValue = "$"+priceValue ;
-  priceValue = "<br>"+priceValue ;
+  // priceValue = "<br>"+priceValue ;
   html = insertProperty(html, pricePropName, priceValue);
   return html;
 }

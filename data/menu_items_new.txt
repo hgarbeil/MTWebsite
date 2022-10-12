@@ -8,7 +8,7 @@
 6,"AP","5","Larb (spicy and sour)","Minced pork or chicken with ground rice, mint, cabbage and cucumber","$15.95","","$16.95","Beef","",""
 7,"SA","6","Cucumber Salad","sliced chilled cucumbers and tomatoes served with a peanut-lime dressing","$9.25","",""
 8,"SA","7","Shrimp and Cabbage Salad","fresh shrimp, shredded green cabbage, Chinese cabbage,and tomatoes served with herb-lime dressing","$14.95","","","","",""
-9,"SA","7a","Garden Salad","lettuce,cucumbers,carrots,tomatoes, red onions,bean sprouts & Napa Cabbage with Thai Lemongrass dressing","$10.95","$12.95","Chicken"
+9,"SA","7a","Garden Salad","lettuce,cucumbers,carrots,tomatoes, red onions,bean sprouts & Napa Cabbage with Thai Lemongrass dressing","$10.95","","$12.95","Chicken"
 10,"SO","8","Tofu Soup","Tofu, green onions, bean sprouts, and cilantro","$8.95","Veg, Pork or Chicken","","",
 11,"SO","9","Noodle Soup","Choice of rice, egg or clear bean thread noodles with vegetalbes","$11.95","Pork,Chicken or Tofu","$12.95","Seafood or Shrimp","$13.95","Pork and Shrimp Combo"
 12,"SO","9a","Pho","Vietnamese rice noodle soup","10.50","Tofu, Pork or Chicken","$12.95","Beef","$13.95","Seafood or shrimp"
@@ -21,6 +21,20 @@
 19,"SD","","Steamed Mixed Vegetables","","$4.95"
 20,"SD","","Peanut Sauce","","$1.00"
 21,"SD","","Sticky Rice","Plain, unsweetened","$4.00"
+22,"EN","11","Pahdt Thai","Stir fried rice noodles, vegetables, scrambled egg with sweet tamarind sauce and a side of peanuts","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+23,"EN","12","Fried Rice <em>Kao Pahdt</em>","Fried rice with bean sprouts, tomatoes, onions, egg and pineapple","$12.95","Chicken pork or tofu","$13.95","Beef or fried tofu","$14.95","Shrimp"
+24,"EN","13","Thai Noodles & Gravy <em>Lad Na</em>","Vegetables served over a choice of rice noodles or crisp egg noodles","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","15.95","Shrimp"
+25,"EN","14","Yom Wun Sen <em>(spicy and sour)</em>","Clear bean thread noodle salad w/ lemon, onions, tomatoes, bamboo, mushrooms and cabbage (served warm)","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","15.95","Shrimp"
+26,"EN","15","Pahdt Prio Won","Mixed vegetables, pineapple, cashews in a sweet and source sauce served over white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+27,"EN","16","Yellow Curry <em>(spicy)</em>","Indian style curry w/ potatoes, pineapples, onions served over white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+28,"EN","17","Gaeng Kiaw Wan<em>(extra spicy)</em>","Green curry, bamboo, peas, green beans and carrots in coconut milk over white rice","$13.95","Chicken or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+29,"EN","18","Gaeng Masman","Clove and cinnamon flavored curry, coconut milk, potatoes, squash, and peanuts, served with white rice","$13.95","Pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+30,"EN","19","Gaeng Daeng <em>(spicy)</em>","Red vegetable curry with coconut milk, served with white rice","$13.95","Chicken, pork or tofu","$14.95","Beef or fried tofu","$15.95","Calamari, Shrimp or Catfish"
+31,"EN","20","Mu Daeng","Slices of roasted red pork sirloin served au jus with steamed vegetables, served over  white rice","$15.95",""
+32,"EN","21","Roast Duck","Steamed vegetables, served tender half of duck served au jus, with white rice","$19.95",""
+33,"EN","22","Roast Chicken","Chicken breast served au jus with steamed vegetables, served with white rice","$14.95",""
+33,"EN","23","Stir Fried Mixed Vegetables","Served over white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+
 
 
 

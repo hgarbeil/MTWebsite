@@ -196,7 +196,7 @@ body {
   background-color: #81122f;
   position: relative ;
   margin: auto;
-  min-height:200px ;
+  min-height:100px ;
   border: 2px solid #3F0C1F;
   padding : 8px ;
   
@@ -210,19 +210,28 @@ body {
   /*background-color: #557c3e;
   */
   font-size: 1.1em;
-  text-align: right;
+  /* text-align: right; */
   position : absolute ;
-  bottom:2px;
+  bottom:0px;
   right:0px ;
-  margin-top:10px ;
-  margin-right:5px ;
+  max-height : 30px ;
+  min-width: 85%;
+  
+  display:flex ;
+  flex-direction: row-reverse ;  
+}
 
-
+.menu-item-price div.pricedesc {
+  flex : 1 1 0 ;
+  flex-wrap: nowrap ;
+  text-align: right ;
+  margin-right: 5px ;
   
 }
 
 .menu-item-tile .menu-item-price span {
   font-style : italic ;
+  margin-left : 5px ;
 }
 
 
@@ -336,6 +345,11 @@ h3.menu-item-title {
     background: url('../images/diningroom_968r.png') no-repeat;
     height: 449px;
   }
+
+  .menu-item-price {
+    display: flex ;
+    flex-direction: row ;
+  }
   /* End Home Page */
 }
 
@@ -345,6 +359,9 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url('../images/diningroom_768r.png') no-repeat;
     height: 353px;
+  }
+  .menu-item-tile {
+    min-height : 150px ;
   }
   /* End Home Page */
 }
@@ -419,8 +436,14 @@ h3.menu-item-title {
   .menu-item-photo {
     margin-right: auto;
   }
+  .menu-item-tile {
+    min-height: 180px ;
+  }
   .menu-item-tile .menu-item-price {
-    text-align: center;
+    /* text-align: center; */
+    display:flex ;
+    min-height: 60px ;
+    
   }
   .menu-item-description {
     text-align: center;;
@@ -444,13 +467,38 @@ h3.menu-item-title {
   }
 
   .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
+    /* position: relative; */
+    /* min-height: 1px; */
     padding-right: 15px;
     padding-left: 15px;
     float: left;
     width: 100%;
   }
+  .menu-item-tile{
+    min-height: 200px ;
+
+  }
+  .col-xxs-12 .menu-item-price {
+    position:absolute ;
+    bottom:0 ;
+    right:0 ;
+    display:flex ;
+    flex-direction: row-reverse;
+    flex-wrap: wrap ;
+    width:100% ;
+    margin-left : 0px ;
+    
+  }
+
+  .menu-item-price div.pricedesc {
+    font-size:.75em ;
+    flex-grow: 1 ;
+    flex-shrink : 1;
+    flex-basis : 0;
+    min-height: 100px ;
+    width:33% ;
+  }
+
 }
 
 
