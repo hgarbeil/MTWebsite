@@ -314,6 +314,43 @@ h3.menu-item-title {
   font-style: italic;
 
 }
+
+.contactform {
+  display:flex ;
+  flex-direction: column ;
+  width : 90%;
+  font-size: 16px;
+  color: white;
+  /* background-color: white; */
+  font-family: 'Oxygen', sans-serif;
+
+
+}
+
+
+.contactfield {
+  flex-grow: 1 ;
+  flex-shrink: 0 ;
+  width: 300px ;
+  /* color:black ; */
+
+}
+
+input.contactfield  {
+  color: black ;
+  border-radius:5px ;
+}
+#contactmessage {
+  font-size: 16px;
+  color: #222;
+  
+  background-color: #fff ;
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 5px ;
+}
+#submitButton {
+  background-color :#557c3e;
+}
 /* END SINGLE CATEGORY PAGE */
 
 

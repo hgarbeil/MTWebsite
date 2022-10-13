@@ -52,6 +52,7 @@ var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 var currentCategory = '' ;
 var aboutHtml = 'snippets/about-snippet.html' ;
+var contactHtml = 'snippets/contactform-snippet.html'
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -106,6 +107,9 @@ var switchItemMenuToActive = function (itemNum) {
   classes = document.querySelector("#navAboutButton").className;
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navAboutButton").className = classes;
+  document.querySelector("#navContactButton").className = classes;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navContactButton").className = classes;
 
   switch (itemNum) {
     case 0 :
@@ -129,6 +133,13 @@ var switchItemMenuToActive = function (itemNum) {
         document.querySelector("#navAboutButton").className = classes;
       }
       break ;
+    case 3 :
+        classes = document.querySelector("#navContactButton").className;
+        if (classes.indexOf("active") == -1) {
+          classes += " active";
+          document.querySelector("#navContactButton").className = classes;
+        }
+        break ;
     default :
       classes = document.querySelector("#navHomeButton").className;
       if (classes.indexOf("active") == -1) {
@@ -160,6 +171,7 @@ $ajaxUtils.sendGetRequest(
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
+  switchItemMenuToActive(1) ;
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
@@ -173,6 +185,18 @@ dc.loadAboutPage = function () {
   switchItemMenuToActive(2);
   $ajaxUtils.sendGetRequest(
     aboutHtml, function(responseText){
+    document.querySelector("#main-content").innerHTML = 
+    responseText ;
+    },false) ; 
+  
+};
+
+// Load the menu categories view
+dc.loadContactPage = function () {
+  showLoading("#main-content");
+  switchItemMenuToActive(3);
+  $ajaxUtils.sendGetRequest(
+    contactHtml, function(responseText){
     document.querySelector("#main-content").innerHTML = 
     responseText ;
     },false) ; 
@@ -358,7 +382,6 @@ function buildMenuItemsViewHtml(acategoryMenuItems,
   }
 
   finalHtml += "</section>";
-  console.log(finalHtml);
   return finalHtml;
 }
 
