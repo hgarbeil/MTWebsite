@@ -34,6 +34,19 @@
 32,"EN","21","Roast Duck","Steamed vegetables, served tender half of duck served au jus, with white rice","$19.95",""
 33,"EN","22","Roast Chicken","Chicken breast served au jus with steamed vegetables, served with white rice","$14.95",""
 33,"EN","23","Stir Fried Mixed Vegetables","Served over white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+34,"EN","24","Pahdt Se Yu","Wide rice noodles stir fried with vegetables and scrambled egg in a soy based gravy sauce, served with a side of crushed peanuts","$14.95","Chicken pork or tofu","$15.95","Beef or fried tofu","$16.95","Shrimp"
+34,"EN","25","Pahdt Thai Wun Sen","Same as #11 with clear bean thread noodles","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+34,"EN","26","Thai Lo Mein","Egg noodles stir fried with vegetables in a brown sauce","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+34,"EN","27","Kai Yat Zai (spicy)","Thai omelet with bell pepper, onion, cilantro, and bean sprouts served with white rice","$14.95","Chicken pork or tofu","$15.95","Beef or fried tofu","$16.95","Shrimp"
+34,"EN","28","Pad Kee Maw <em>Drunken Noodles</em> (spicy)","Stir fried wide rice noodles in a hot and spicy Thai basil sauce with vegetables, scrambled egg, served with a side of crushed peanuts","$14.95","Chicken pork or tofu","$15.95","Beef or fried tofu","$16.95","Shrimp"
+34,"EN","29","Pad Ka Pow (spicy)","Bell pepper, onion and bamboo stir fried with spicy Thai basil sauce, served over white rice","$14.95","Chicken pork or tofu","$15.95","Beef or fried tofu","$16.95","Shrimp"
+34,"EN","30","Panang Curry (extra spicy)","Thick red curry with onion, bamboo, bell pepper, and coconut milk served with white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+34,"EN","31","Gai Pahdt Kieng (spicy)","Stir fried with ginger,bamboo, onion, and bell pepper served over white rice","$13.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.95","Shrimp"
+34,"EN","32","Broccoli & Beef","Tender beef and broccoli stir fried in a brown sauce, served over white rice","$14.95",""
+34,"EN","33","Asian Eggplant","Eggplant, onion, bean sprouts, bell peppers, and bamboo stir fried in a mild red chili paste served over white rice","$12.95","Chicken pork or tofu","$13.95","Beef or fried tofu","$14.95","Shrimp"
+34,"EN","34","Shitake Mushrooms","Mushrooms and chicken with onions, bean sprouts, bell peppers, and bamboo served over white rice","$14.95","Chicken pork or tofu","$14.95","Beef or fried tofu","$15.50","Shrimp"
+34,"EN","35","Grilled Beef Salad (spicy)","Charbroiled angus beef slices marinated with lime juice and onions served with white rice on a bed of Chinese cabbage","$18.95",""
+34,"EN","36","BBQ Sesame Pork","Served with white rice, cilantro & green onions","15.95",""
 
 
 
